@@ -1,0 +1,44 @@
+<p>concept works!</p>
+<div style="border: 5px solid rgb(9, 158, 199)">
+    <h1><p appHighlight>Concept Page></p></h1>
+    <b>
+        <div style="border: 5px solid rgb(9, 158, 199)">
+            <h1>ConceptPage</h1>
+            <table class="table table-strip table-hover">
+                <thead>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Section</th>
+                </thead>
+                <tbody *ngIf="concepts?.length">
+                    <tr *ngFor="let concept of concepts">
+                        <td>{{concept.name|uppercase}}</td>
+                        <td>{{concept.class}}</td>
+                        <td>{{concept.section|lowercase}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+    <br>
+    <form class="row gy-2 gx-3 align-items-center">
+        <div class="col-auto">
+            <label class="form-label" for="autoSizingInput">Name</label>
+            <input type="text" name="name" class="form-control" id="autoSizingInput" [(ngModel)]="conceptsForm.name">
+        </div>
+        <div class="col-auto">
+            <label class="form-label" for="autoSizingInputGroup">class</label>
+            <input type="text" name="class" class="form-control" id="autoSizingInputGroup"
+                [(ngModel)]="conceptsForm.class">
+        </div>
+        <div class="col-auto">
+            <label class="form-label" for="autoSizingInput">section</label>
+            <input type="text" name="section" class="form-control" id="autoSizingInput"
+                [(ngModel)]="conceptsForm.section">
+        </div>
+        <div class="col-auto">
+            <label class="visually-hidden" for="autoSizingInput"></label>
+            <button type="button" class="form-control btn btn-success" value="submit" (click)="update()">update</button>
+        </div>
+        <br>
+    </form>
+    <br>

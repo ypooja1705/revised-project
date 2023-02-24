@@ -1,0 +1,36 @@
+{
+    "Student": [
+      {
+        "id": 1,
+        "name": "Harsh",
+        "class": 1,
+        "section": "A"
+      },
+      {
+        "id": 2,
+        "name": "Shashi",
+        "class": 2,
+        "section": "B"
+      },
+        
+      {
+        "name": "ripu daman",
+        "class": "2",
+        "section": "A",
+        "id": 4
+      }, 
+      {
+        "name": "Ram",
+        "class": "4",
+        "section": "C",
+        "id": 5
+      },
+      {
+        "name": "sonu",
+        "class": "8",
+        "section": "C",
+        "id": 6
+      }
+      
+    ]
+}

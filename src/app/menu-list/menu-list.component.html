@@ -1,0 +1,12 @@
+
+<h4 style="color: red;"> menu works!</h4>
+<!-- <ul class="fix"> 
+    <li class="btn btn-primary" [routerLink]="'application'">application</li>
+    <li class="btn btn-secondary"[routerLink]="'application-two/id:'">application-two</li>
+    <li class="btn btn-secondary"[routerLink]="'concept'">concept</li>
+    <li class="btn btn-info"[routerLink]="'concept_two'">concept-two</li>
+    <li class="btn btn-dark"[routerLink]="'customer'">customer</li>
+ </ul> -->
+ <ul class="fix"> 
+    <li [class]="item.cssClass" *ngFor="let item of menulist" [routerLink]="item.route">{{item.displayName}}</li> 
+</ul> 

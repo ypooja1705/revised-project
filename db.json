@@ -1,0 +1,84 @@
+{
+  "Customer": [
+    {
+      "id": 1,
+      "name": "Harsh",
+      "class": 1,
+      "section": "A"
+    },
+    {
+      "id": 2,
+      "name": "Shashi",
+      "class": 2,
+      "section": "B"
+    },
+    {
+      "name": "",
+      "class": "",
+      "section": "",
+      "id": 3
+    },
+    {
+      "name": "ripu daman",
+      "class": "2",
+      "section": "A",
+      "id": 4
+    },
+    {
+      "name": "Ram",
+      "class": "4",
+      "section": "C",
+      "id": 5
+    },
+    {
+      "name": "sonu",
+      "class": "8",
+      "section": "C",
+      "id": 6
+    },
+    {
+      "name": "sunil yadav",
+      "class": "btech",
+      "section": "4",
+      "id": 7
+    },
+    {
+      "name": "sanu",
+      "class": "1",
+      "section": "a",
+      "id": 8
+    },
+    {
+      "name": "assu",
+      "class": "2",
+      "section": "a",
+      "id": 9
+    },
+    {
+      "name": "sita",
+      "class": "2",
+      "section": "a",
+      "id": 10
+    },
+    {
+      "name": "sita",
+      "class": "2",
+      "section": "a",
+      "id": 11
+    }
+  ],
+  "Concept": [
+    {
+      "name": "raghva",
+      "class": 4,
+      "section": "a",
+      "id": 1
+    },
+    {
+      "name": "ranu",
+      "class": "2",
+      "section": "c",
+      "id": 2
+    }
+  ]
+}

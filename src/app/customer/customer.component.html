@@ -1,0 +1,59 @@
+<p>customer works!</p>
+<h4>{{about|titlecase }}</h4><br>
+<b>{{types|titlecase}}</b><br>
+
+<!-- Bind button disabled state to `isUnchanged` property --><br>
+<button type="button" [disabled]="isUnchanged">Disabled Button</button><br>
+<!-- <div class="dls-menu-item" style="float: right;"></div> -->
+
+<button type="btn btn-primary" (click)="onPress()">click me</button>
+<!-- <div class="dls-menu-item" style="float: left;"></div> -->
+<br>
+<br>
+ <!-- <div> -->
+    <!-- two way binding -->
+    <!-- <input type="text" [(ngModel)]="abc"> -->
+<!-- </div> -->
+<div style="border: 5px solid rgb(9, 158, 199)">
+    <h1>CustomerPage</h1>
+    <!-- {{customers|json}} -->
+    <!-- {{customersForm|json}} -->
+    <table class="table table-strip table-hover">
+        <thead>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Section</th>
+        </thead>
+        <tbody *ngIf="customers?.length">
+            <tr *ngFor="let customer of customers">
+                <td>{{customer.name|uppercase}}</td>
+                <td>{{customer.class}}</td>
+                <td>{{customer.section|lowercase}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <form class="row gy-2 gx-3 align-items-center">
+        <div class="col-auto">
+            <label class="form-label" for="autoSizingInput">Name</label>
+            <input type="text" name="name" class="form-control" id="autoSizingInput" [(ngModel)]="customersForm.name">
+        </div>
+        <div class="col-auto">
+            <label class="form-label" for="autoSizingInputGroup">class</label>
+            <input type="text" name="class" class="form-control" id="autoSizingInputGroup"
+                [(ngModel)]="customersForm.class">
+        </div>
+        <div class="col-auto">
+            <label class="form-label" for="autoSizingInput">section</label>
+            <input type="text" name="section" class="form-control" id="autoSizingInput"
+                [(ngModel)]="customersForm.section">
+        </div>
+        <div class="col-auto">
+            <label class="visually-hidden" for="autoSizingInput"></label>
+            <button type="button" class="form-control btn btn-success" value="submit" (click)="onSave()">Save</button>
+        </div>
+        <br>
+    </form>
+    <br>
+    <br>
