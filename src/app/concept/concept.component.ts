@@ -17,6 +17,7 @@ export class ConceptComponent implements OnInit {
   };
   conceptsForm = {
     "name": "", "class": "", "section": ""
+ 
   }
   ngOnInit():void {
     debugger;  

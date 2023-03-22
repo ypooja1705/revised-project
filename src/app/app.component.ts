@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'projectdemo';
   about ='this is a angular revision project';
+  abc='this is';
 
   menuSource:any;
   constructor(){
@@ -68,6 +69,11 @@ export class AppComponent {
 displayName:"Comp3",
 cssClass:"btn btn-info" 
 },
+{
+  route:"marketing",
+displayName:"Markeing",
+cssClass:"btn btn-danger" 
+}
     ]}
   }
  

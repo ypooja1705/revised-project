@@ -33,7 +33,7 @@ import { MarketingComponent } from './marketing/marketing.component';
     // CustomerComponent,
     MenuListComponent,
     SupplierComponent,
-    Supplier2Component,
+    Supplier2Component, 
     Comp1Component,
     Comp2Component,
     Comp3Component,
